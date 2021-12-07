@@ -1,0 +1,43 @@
+.slick-dots{
+    bottom:5px;
+    right: 30px;
+}
+
+.slick-dots li{
+    margin:0px;
+}
+.slick-dots li button:before{
+    font-size:12px;
+}
+
+.slider-icons {
+    display:block;
+    position: relative;
+}
+
+.slider-icons .slider-icon {
+    display:block;
+    position: relative;
+    float:left;
+    padding: 15px 5px;
+    height: 74px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider-icons .slider-icon img {
+    display:block;
+    position: relative;
+    width: 65px;
+    margin-right: 10px;
+    float: left;
+}
+
+.slider-icons .slider-icon .slide-icon-text {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.slick-slider {
+    z-index: 2;
+}

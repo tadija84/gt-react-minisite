@@ -1,0 +1,374 @@
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.reg-btn {
+  display: block;
+  position: relative;
+  font-size: 17px;
+  line-height: 19px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: #fb641b;
+  padding: 12px 40px 10px 40px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  margin: 30px auto;
+}
+
+.reg-title {
+  display: block;
+  width: 160px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+  margin: 40px auto 0 auto !important;
+  font-size: 26px !important;
+}
+
+.full-size {
+  top: -15px;
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  right: -10px;
+}
+
+.reg-form label {
+  font-size: 11px;
+  color: #636363;
+  font-weight: 400;
+}
+
+.reg-form input.error,
+.reg-form input {
+  display: block;
+  position: relative;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #bdbdbd;
+  padding: 5px 10px;
+  font-size: 13px;
+  box-shadow: none;
+  width: 100%;
+}
+
+.reg-form input.error {
+  border-color: red;
+}
+
+.reg-form button {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  background: #fff;
+  padding: 9px 20px 9px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border: solid 1px #bdbdbd;
+}
+
+.reg-form button:hover {
+  border-color: #fa652f;
+}
+
+.pop-container p {
+  font-size: 13px;
+}
+
+.form-preview {
+  display: block;
+  position: relative;
+}
+.form-preview h5 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 5px 0 10px 0;
+  padding: 0 0 12px 0;
+  border-bottom: solid 1px #ccc;
+}
+.form-preview p {
+  font-size: 13px;
+  line-height: 17px;
+  color: #333;
+}
+
+.form-preview ul {
+  list-style-type: none;
+  font-size: 12px;
+  padding: 10px;
+  background: #f5f5f5;
+  margin: 20px 0;
+}
+
+.form-preview ul li {
+  padding: 0 0 5px 0;
+}
+
+.form-preview ul li span {
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  font-size: 10px;
+  color: #000;
+  font-weight: 500;
+}
+
+.reg-form button.final-form-btn {
+  font-size: 15px;
+  background: #ffffff;
+  color: #000;
+  display: block;
+  width: 100%;
+  margin: 64px 0 0 0;
+  clear: both;
+  float: none;
+  position: relative;
+  border: solid 1px #bdbdbd;
+}
+
+.verification-status {
+  display: block;
+  position: relative;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: #104473;
+}
+
+.verification-status span {
+  display: block;
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+.verification-status span.busy {
+  border-radius: 20px;
+  box-shadow: 1px 1px 0px 1px #fa652f;
+}
+
+.verification-status span.busy:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50%;
+  border-top: solid 15px #fff;
+  z-index: 2;
+
+  -webkit-animation: rotating 1s linear infinite;
+  -moz-animation: rotating 1s linear infinite;
+  -ms-animation: rotating 1s linear infinite;
+  -o-animation: rotating 1s linear infinite;
+  animation: rotating 1s linear infinite;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 1s linear infinite;
+  -moz-animation: rotating 1s linear infinite;
+  -ms-animation: rotating 1s linear infinite;
+  -o-animation: rotating 1s linear infinite;
+  animation: rotating 1s linear infinite;
+}
+
+.verification-code {
+  padding-top: 20px;
+}
+
+.verification-status span.notverified:after {
+  content: "\2715";
+  display: block;
+  position: absolute;
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.verification-status span.verified:after {
+  content: "\2713";
+  display: block;
+  position: absolute;
+  color: green;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reg-form input:disabled {
+  background: #fff;
+  opacity: 0.4;
+}
+
+.back-to-login,
+.forgoth-btn {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  padding: 15px 0;
+  margin-top: 50px;
+  text-decoration: underline;
+  color: #104473;
+  cursor: pointer;
+  border-top: solid 1px #dedede;
+}
+
+.back-to-login:hover,
+.forgoth-btn:hover {
+  text-decoration: none;
+}
+
+.social-btn {
+  display: inline-block;
+  position: relative;
+  margin: 0 5px;
+  height: 48px !important;
+  padding: 10px 20px 10px 40px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  line-height: 15px !important;
+  box-shadow: none !important;
+}
+
+.social-btn span {
+  padding: 0 !important;
+}
+
+.social-btn.fb {
+  background: #4267b2 !important;
+  color: #fff !important;
+}
+
+.social-btn.google {
+  background: #db5048 !important;
+  color: #fff !important;
+}
+
+.social-btn div {
+  display: none;
+}
+
+.social-btn.google:before,
+.social-btn.fb:before {
+  content: "\f09a";
+  display: block;
+  position: absolute;
+  font-family: FontAwesome;
+  left: 20px;
+  font-size: 18px;
+}
+
+.social-btn.google:before {
+  content: "\f1a0";
+}
+
+.social-login-title {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  clear: both;
+  margin-top: 10px;
+  padding: 20px 5px 20px 0;
+  position: relative;
+  text-align: center;
+  color: #909090;
+}
+
+.or-this {
+  background: #fff;
+  display: block;
+  top: -10px;
+  left: 50%;
+  font-size: 14px;
+  margin-left: -20px;
+  padding: 0 15px;
+  position: absolute;
+}
+
+.social-buttons {
+  text-align: center;
+}
+
+.social-buttons button:hover {
+  opacity: 0.85 !important;
+}
+
+h3.status-title i {
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+h3.status-title {
+  font-size: 14px !important;
+  padding-top: 20px !important;
+}
+
+h3.status-title i.fa-check {
+  color: green;
+}
+
+h3.status-title i.fa-warning {
+  color: #fa652f;
+}
+
+.pop-error {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  margin-left: -25%;
+  padding: 50px 50px;
+  background: #db5048;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  z-index: 99999;
+  margin-top: -50px;
+}

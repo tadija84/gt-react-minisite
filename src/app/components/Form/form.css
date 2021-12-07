@@ -1,0 +1,54 @@
+.checkbox {
+    display:inline-block;
+    position: relative;
+}
+
+.checkbox input {
+    width:0;
+    height:0;
+    padding:0;
+    position: absolute;
+    display: block;
+    z-index: 0;
+}
+
+.checkbox label {
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    padding-left: 30px;
+    font-size:13px;
+    line-height: 13px;
+    color:#333;
+    cursor: pointer;
+}
+
+.checkbox label:hover {
+    color: brown;
+}
+
+.checkbox label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    width:14px;
+    height: 14px;
+    border: solid 1px #ccc;
+}
+
+.checkbox.checked label:after {
+    content: "\f00c";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    color: #ff8600;
+    font-family: FontAwesome;
+    font-size: 13px;
+    line-height: 13px;
+    top:0px;
+    left:1px;
+}

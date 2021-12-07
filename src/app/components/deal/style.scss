@@ -1,0 +1,245 @@
+.deal {
+  position: relative;
+  // border: solid 1px #ccc;
+  padding: 0;
+  background: #f7f7f7;
+  height: 402px;
+  margin-bottom: 11px;
+
+  .deal-header {
+    height: 42px;
+    background: #2f343d url("./img/giga-deal.png") center center no-repeat;
+    text-indent: -99999px;
+  }
+
+  .deal-timer {
+    background: #e2e2e2;
+    height: 32px;
+  }
+
+  .deal-products {
+    background: #f9f9f9;
+    min-height: 250px;
+  }
+}
+
+.deal {
+  height: 388px;
+  // overflow: hidden;
+}
+
+.deal .product-header {
+  display: none;
+}
+
+.deal .product-item-css .stickers .sticker-top,
+.product-item-css .stickers .sticker-bottom {
+  display: none !important;
+}
+
+.deal .product-item-css .buy-holder {
+  display: none;
+}
+
+.deal .product-item-css .product-box .vote-stars {
+  display: none;
+}
+
+.deal-products .product-item-css .product-box {
+  height: 320px;
+  background: #f7f7f7;
+}
+
+.deal .deal-timer {
+  background: #e2e2e2;
+  height: 32px;
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  color: #333;
+  font-size: 22px;
+  background: #e7e7e7;
+  text-align: center;
+  padding: 1px 5px;
+  line-height: 32px;
+  font-weight: 400;
+  border: solid 1px #ccc;
+  border-top: none;
+  border-bottom: none;
+}
+
+.deal .deal-products {
+  border: solid 1px #ccc;
+  border-top: none;
+}
+
+.deal-products .slick-dots {
+  bottom: 5px;
+  right: 30px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+  width: 100%;
+  height: 15px;
+  text-align: center;
+  line-height: 8px;
+}
+
+.deal-products .slick-next:before,
+.slick-prev:before {
+  color: #000;
+}
+
+.deal-products button.slick-arrow.slick-prev {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 30px;
+  height: 60px;
+  background: #e4e4e4;
+  margin-top: 125px;
+  cursor: pointer;
+  z-index: 99999;
+  left: 0px;
+  -o-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  -ms-border-radius: 0 30px 30px 0;
+  -webkit-border-radius: 0 30px 30px 0;
+  -khtml-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+}
+
+.deal-products button.slick-arrow.slick-next {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 30px;
+  height: 60px;
+  background: #e4e4e4;
+  /* margin-top: -83px; */
+  margin-top: 125px;
+  cursor: pointer;
+  right: 0px;
+  -o-border-radius: 30px 0 0 30px;
+  -moz-border-radius: 30px 0 0 30px;
+  -ms-border-radius: 30px 0 0 30px;
+  -webkit-border-radius: 30px 0 0 30px;
+  -khtml-border-radius: 30px 0 0 30px;
+  border-radius: 30px 0 0 30px;
+}
+
+.deal-products .slick-next:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  font-weight: normal;
+  content: "\f054";
+  color: #333;
+  z-index: 1;
+  right: 3px;
+  top: 20px;
+}
+
+.deal-products .slick-prev:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  font-weight: normal;
+  content: "\f053";
+  color: #333;
+  z-index: 1;
+  left: 4px;
+  top: 20px;
+}
+
+.deal-products .product-item-css .product-box {
+  border: none !important;
+  border-top-color: unset !important;
+  border-left: unset !important;
+}
+
+.deal-products .product-carousel {
+  margin: 0;
+}
+
+.deal-products .old-price {
+  display: block;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  margin: 0 !important;
+  padding: 15px 0 10px !important;
+  text-align: center;
+  text-decoration: line-through;
+  text-decoration-color: red;
+  color: #000 !important;
+}
+.deal-products .old-price span:nth-child(1) {
+  display: none;
+}
+
+.price-holder .old-price span:nth-child(2) {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.deal-products .product-item-prices .saving-price {
+  display: none !important;
+}
+
+.deal-products .price {
+  height: auto;
+  text-align: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+}
+
+.deal-products .product-item-css img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.deal-products a.product-item-name h4 {
+  border: none;
+}
+
+/*Dots*/
+.deal-products .slick-dots li {
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  padding: 0;
+}
+
+.deal-products .slick-dots li button {
+  width: 6px;
+  height: 6px;
+}
+
+.deal-products .slick-dots li.slick-active button:before {
+  text-indent: -999999999px;
+  // border: 1px solid #838383;
+  // border-radius: 50%;
+  background-color: transparent;
+}
+
+.deal-products .slick-dots li button:before {
+  text-indent: -999999999px;
+  border: 1px solid #838383;
+  border-radius: 50%;
+  background-color: #838383;
+  line-height: 6px;
+  width: 6px;
+  height: 6px;
+  opacity: 1;
+}

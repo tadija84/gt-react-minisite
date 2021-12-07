@@ -1,0 +1,228 @@
+body {
+  padding: 0 !important;
+}
+
+.js-delete {
+  display:none;
+}
+
+.mobile #header-nav.head-nav.hiden {
+  display: none;
+}
+
+.mobile {
+  .middle-menu{
+    margin-top:20px;
+  }
+  .middle-menu ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+  }
+ 
+  .middle-menu ul li{
+    font-size:20px;
+    
+    padding: 10px 20px;
+  }
+  .middle-menu ul li i{
+    padding-right: 20px;
+  }
+  .middle-menu ul  a{
+    color:#333;
+    text-decoration: none;
+  }
+  .middle-menu ul a.active{
+    color:#f68116;
+    
+  }
+  .middle-menu ul a.active li{
+    background:white;
+  }
+  .bm-item {
+    display: inline-block;
+
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+
+  /* Change color on hover */
+  .bm-item:hover {
+    color: white;
+  }
+
+  /* The rest copied directly from react-burger-menu docs #efefef */
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    left: 12px;
+    top: 18px;
+
+  }
+  .bm-burger-button:hover{
+
+    // pointer-events: none;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #ffffff;
+    height:12% !important;
+    border-radius: 20% !important;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    display: none;
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #efefef;
+    font-size: 1.15em;
+  }
+  .bm-item:focus{
+    outline:none;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  .bm-item:hover{
+    color:defa
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    transition: opacity 0.3s ease 0s;
+  }
+  .main-navigation {
+    padding: 0 0 0 0px;
+  }
+
+  .megabtn {
+    display: block;
+    position: absolute;
+    text-indent: -99999px;
+    background: transparent;
+    border: solid 2px #fff;
+    border-left: none;
+    border-right: none;
+    width: 22px;
+    height: 16px;
+    padding: 0;
+    top: 16px;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      height: 2px;
+      background: #fff;
+      top: 5px;
+    }
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+.mobile-header {
+  header {
+    padding-top: 0px;
+  }
+
+  #mobile-user-widget {
+    display: none;
+  }
+
+  #reg {
+    display: none;
+  }
+
+  header #logo {
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 50px;
+    z-index: 2;
+    width: auto;
+    height: auto;
+
+    img {
+      height: 28px;
+      width: auto;
+    }
+  }
+
+  #searchbox {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 45px;
+
+    .searchbox-container {
+      input {
+        display: none;
+      }
+
+      &:after {
+        content: "\f002";
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 5px;
+        font-family: FontAwesome;
+        z-index: 2;
+        color: #fff;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .cart-container {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1003;
+    color: #fff;
+    list-style-type: none;
+    width: 40px;
+
+    .fa.fa-shopping-cart {
+      position: absolute;
+      top: -3px;
+      right: 18px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .main-navigation {
+    background: #000;
+  }
+}

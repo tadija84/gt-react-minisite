@@ -1,0 +1,32 @@
+.swiper-holder {
+    position: relative;
+
+    .swiper {
+        transition: transform 0.3s ease-out;
+        position: relative;
+        z-index: 2;
+    }
+
+    .remove-icon {
+        display:block;
+        position: absolute;
+        top:0px;
+        left:0px;
+        right: 0px;
+        bottom: 0px;
+        background: #d41616;
+        z-index: 1;
+
+        &:after {
+            content: "\f014";
+            display:block;
+            position: absolute;
+            right:20px;
+            top:50%;
+            margin-top:-10px;
+            font-family: FontAwesome;
+            color:#fff;
+            font-size: 22px;
+        }
+    }
+}
