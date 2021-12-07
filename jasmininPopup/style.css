@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    background-color: #2a2a2a;
+    width: 70vw;
+    height: 80vh;
+    color: #888;
+}
+
+.left-container {
+    width: 100%;
+    border-right: green 1px solid;
+    background-color: #222;
+    box-shadow: 0px 0px 20px black; 
+   
+}
+
+.right-container {
+    width: 100%;
+    text-align: left;
+    margin-left: 2.5em;
+    margin-top: 2em;
+}
+
+.right-container ul {
+    font-size: 0.9em;
+}
+
+button {
+    background-color: #399A29;
+    font-size: 1em;
+    color: white;
+    border: none; 
+    width: 4em;
+    height: 2em;
+}
+
+img {
+    width: 100%;
+  
+    
+}
+
+h2 {
+    font-weight: 100;
+    color: #399A29;
+}
