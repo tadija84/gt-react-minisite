@@ -1,0 +1,52 @@
+
+.main-container {
+    font-family: 'Titillium Web', sans-serif;
+    
+    justify-content: space-around;
+    background-color: #2a2a2a;
+    width: 70vw;
+    color: #888;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+ }
+ .kartica{
+     display: grid;
+     grid-template-columns: auto auto;
+ }
+ .left-container {
+    width: 35vw;
+    border-right: green 1px solid;
+    background-color: #222;
+    box-shadow: 0px 0px 20px black;   
+ }
+ .left-container img{
+     width: 100%;
+ }
+ 
+ .right-container {
+    width: 35vw;
+    text-align: left;
+    margin-left: 2.5em;
+    margin-top: 2em;
+ }
+ 
+ .right-container ul {
+    font-size: 0.9em;
+ }
+ 
+ .dugme{
+       background-color: #399A29;
+       font-size: 1em;
+       color: white;
+       border: none; 
+       width: 4em;
+       height: 2em; 
+ }
+ h2 {
+    font-weight: 100;
+    color: #399A29;
+ }
+  
+ .card img {
+    width: 100%;
+ } 
