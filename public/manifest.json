@@ -1,0 +1,21 @@
+{
+  "short_name": "Gigatron",
+  "name": "Gigatron Store Lite",
+  "icons": [
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?start_url=homescreen",
+  "display": "standalone",
+  "theme_color": "#ffca05",
+  "orientation": "portrait",
+  "background_color": "#ffca05"
+}
